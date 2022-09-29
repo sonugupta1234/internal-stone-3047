@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+   ></script>
     <style>
         div>img{
             width: 15%;
@@ -20,6 +24,7 @@
         body{
             margin: 0;
             padding: 0;
+            font-family:'Times New Roman', Times, serif;
         }
         #container{
             width:70%;
@@ -34,7 +39,8 @@
             width: 50%;
             height:500px;
             text-align: left;
-           margin-left: 30px;
+            margin-left: 30px;
+           background-color: #FCF9F7;
         }
         .right{
            
@@ -55,13 +61,63 @@
         width:90%;
        }
        
-       div>button{
+       .left>div>button{
         height:20px;
         margin-top:19px;
+        color: white;
+        background-color: #FAA156;
+        border-radius: 30px;
        }
        div>h4{
         padding-left: 10px;
        }
+       .right>div{
+        width:80%;
+        height:auto;
+        text-align: left;
+    
+       }
+       .rest{
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        margin-right: 90px;
+        margin-top: 30px;
+       }
+       form>input{
+        width:90%;
+        height:40px;
+        margin-top: 5px;
+       }
+       input+button{
+        margin-top: 20px;
+        width:92%;
+        height:40px;
+        background-color: #80D7CF;
+        border:1px solid  #80D7CF;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+       }
+       .right>h3{
+        color:#F6883E;
+       }
+       p+button{
+        color:#F6883E;
+        width:38%;
+        height:40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+       }
+    
+       
     </style>
 </head>
 <body>
@@ -82,8 +138,42 @@
         </div>
 
         <div class="right">
-
+            <div>
+           <h3>Log in to your account</h3>
+           <form>
+            <label for="">Email Address</label><br/>
+            <input id="name" type="text" placeholder="name@company.com" required/><br/>
+            <div class="rest">
+            <label for="">Password</label>
+            <button>Forgot password?</button>
+            </div>
+            <input id="pswd" type="text" placeholder="Password" required/>
+            <button>Log in</button>
+           </form>
+           
+           
         </div>
+        
+        <h3><i class="fa-sharp fa-solid fa-g"></i>Sign in with Google</h3>
+        <p>Sign in with SSO</p>
+        <p>OR</p>
+        <p>Don't have an account?</p>
+        <button><a href="signUp.html">Sign up for free</button>
     </div>
 </body>
 </html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",add)
+    function add(event){
+        event.preventDefault();
+        let LSData=JSON.parse(localStorage.getItem("login-details")) || [];
+
+        let loginobj={
+            email: document.querySelector("#name").value,
+            password: document.querySelector("#pswd").value
+        }
+        LSData.push(loginobj)
+        localStorage.setItem("login-details",JSON.stringify(LSData))
+    }
+</script>

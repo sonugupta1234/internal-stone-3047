@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+   ></script>
+    <style>
+        #navbar{
+            width:100%;
+            display:flex;
+            background-color: #FCFDFE;
+            
+        }
+        #navbar>div>img{
+            width: 30%;
+            padding-left: 50px;
+            margin-top: 15px;
+        }
+        h3>i{
+            padding-left: 10px;
+        }
+           #middle{
+            width:70%;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 130px;
+        }
+       
+        #right{
+            width:15%;
+            margin-right: 40px;
+            display: flex;
+        }
+        #right>button{
+            width:40%;
+            height:30px;
+            margin-top: 15px;
+            color:black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        #right>button+button{
+            width:50%;
+            margin-left: 10px;
+            color:white;
+            background-color: #00BAAB;
+        
+        }
+       .dropdown:hover .dropdown-content{
+          width:45%;
+          display: block;
+          cursor: pointer;
+          box-shadow: -1px -1px 10px -2px rgba(0,0,0,0.5);
+          background-color: #F4F6FB;
+       }
+       .dropdown:hover{
+        cursor: pointer;
+       }
+       .dropdown-content{
+        display:none;
+        position: absolute;
+
+       
+       }
+
+       .dropdown-content>h3{
+        display: block;
+        margin: auto;
+        padding-left: 55px;
+        color: #FAB668;
+
+       }
+      
+       .container{
+        display:flex;
+        text-align: left;
+        justify-content: space-around;
+       }
+       button>a{
+        cursor: pointer;
+       }
+      
+       #video{
+        height: 350px;
+        background-image: url("https://niftypm.com/_nuxt/img/large@1x.8a3e5ad.webp");
+        width:50%;
+        margin: auto;
+        background-position: top;
+        background-size: cover;
+       }
+
+       #body>div:nth-child(2){
+        width:60%;
+        margin:auto;
+        text-align: center;
+       }
+
+       h1+p{
+        width:60%;
+        margin: auto;
+       }
+       #body>div:nth-child(2)>div{
+        width:50%;
+       display:flex;
+       margin: auto;
+       margin-top: 20px;
+       justify-content: space-between;
+       }
+       
+       #body>div:nth-child(2)>div>input{
+        border:1px solid #ECF1F6;
+        background-color: #F1F4F7;
+        width:78%;
+        height:50px;
+        border-radius: 10px;
+       }
+       #body>div:nth-child(2)>div>button{
+       height:40px;
+      margin-top: 5px;
+      background-color: #00BAAB;
+     border:1px solid #00BAAB;
+    border-radius: 10px;
+    color:white;
+       }
+       button>img{
+        width:10%;
+       }
+       div>button{
+        width:50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        
+       }
+       #body{
+        background-color: #F8F8FA;
+        height:auto;
+       }
+       .part{
+        width:70%;
+        height:auto;
+        margin: auto;
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+       }
+       .part>div>img{
+        width:70%;
+       }
+       #middle_part>p{
+        margin: auto;
+        text-align: center;
+        margin-top: 150px;
+       }
+       #lower_part{
+        width:90%;
+        height:auto;
+        margin-top: 40px;
+        background-color: #E7F8FE;
+       }
+       #lower_part>div{
+        width:70%;
+        height:100px;
+        display:flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+       }
+       #lower_part>h1{
+        text-align: center;
+        margin-top: 40px;
+       }
+       #lower_part>p{
+        width:50%;
+        text-align: center;
+        margin-top: 20px;
+       }
+       #lower_part>img{
+        
+        width:80%;
+        margin: auto;
+        margin: 40px 130px;
+       
+       }
+       
+ </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" alt=""/>
+        </div>
+        <div id="middle">
+              
+                <div class="dropdown">
+                  <h3>Features<i class="fa-solid fa-chevron-down"></i></h3>
+                     <div class="dropdown-content">
+                       <h3><i class="fa-solid fa-heart"></i>Learn how Nifty inspires productivity!</h3>
+                       <div class="container">
+                          <div>
+                          <h3>Discussions</h3>
+                          <h3>Tasks</h3>
+                          <h3>Time Tracing</h3>
+                          <h3>Project Home</h3>
+                          </div>
+
+                          <div>
+                            <h3>Milestones(Ghantt Chart)</h3>
+                            <h3>Docs & Files</h3>
+                            <h3>Reporting</h3>
+                            <h3>Project portfolios</h3>
+                          </div>
+                      </div>
+                      </div>
+
+                 </div>
+
+                 <div class="dropdown">
+                    <h3>Use Cases<i class="fa-solid fa-chevron-down"></i></h3>
+                       <div class="dropdown-content">
+                         <h3><i class="fa-solid fa-heart"></i>Nifty is very flexible.Here is a few example how you can Use it</h3>
+                         <div class="container">
+                            <div>
+                            <h3>Agile Development</h3>
+                            <h3>Digital Agencies</h3>
+                            <h3>Marketing Teams</h3>
+                            </div>
+  
+                            <div>
+                              <h3>Client Management</h3>
+                              <h3>Legal Case Management</h3>
+                              <h3>Product Teams</h3>
+                            </div>
+                        </div>
+                        </div>
+  
+                   </div>
+
+                   <div class="dropdown">
+                    <h3>Resources<i class="fa-solid fa-chevron-down"></i></h3>
+                       <div class="dropdown-content">
+                         <div class="container">
+                            <div>
+                            <h3>Apps</h3>
+                            <h3>Integrations</h3>
+                            <h3>Security</h3>
+                            </div>
+  
+                            <div>
+                              <h3>Blog</h3>
+                              <h3>Help Center</h3>
+                              <h3>Get a Demo</h3>
+                            </div>
+                        </div>
+                        </div>
+  
+                   </div>
+
+              <h3>Got Clients?</h3>
+              <h3>Pricing</h3>
+              <h3>Get a Demo</h3>
+        </div>
+        
+        <div id="right">
+            <button><a href="login.html">Login</a></button>
+            <button><a href="signUp.html">Sign Up</a></button>
+        </div>
+    </div>
+
+    
+    <div id="body">
+        <div id="video">
+            
+            <div>
+                <div id="play-button"><i class="fa-sharp fa-solid fa-play"></i></div>
+                <p>I N T R O D U C I N G</p>
+            </div>
+         </div>
+        
+     <div>
+        <h1>The ultimate project management OS</h1>
+        <p>Stop switching between Roadmaps, Tasks, Docs, Chats, & other tools.
+        Nifty is one app to unite teams, goals, and actions in one place.</p>
+        <div>
+           <input id="email" type="text" placeholder="name@company.com"/>
+           <button>Get Started</button>
+        </div>
+       <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6B2ZqYbX5pDaXu6TDwpeGOoxWuVaJwyISvTXnfI1hTQ&s" alt="google_logo"/>Sign Up With Google</button>
+       <p>Free forever. No credit card required</p>
+  </div>
+
+        
+    </div>
+
+    <div id="middle_part">
+        <p>JOIN OVER 20,000 HIGHLY PRODUCTIVE TEAMS</p>
+        <div class="part">
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/logo-verizon.b7c8a9c.svg" alt=""/>
+            </div>
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/logo-pd.e35bded.svg" alt=""/>
+            </div>
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/logo-emovis.895c86e.svg" alt=""/>
+            </div>
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/logo-vmware.b3363fd.svg" alt=""/>
+            </div>
+            <div>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI0MDAiPgogIDxjbGlwUGF0aCBpZD0iYiI+CiAgICA8cGF0aCBkPSJNMC0xdjgzaDU1LjkzN3YyMzZIMS41MjN2ODJoMTk0LjY1di04MmgtNTUuOTM4VjgyaDU0LjQxNFYtMXptNTU0LjAyIDF2ODJoNTUuOTM4djIzNmgtNTQuNDE0djgyaDEzOC43MVYxNzEuODRsODIuNjU2IDIyOC4wOCAxLjY4LjA0IDgxLjE3Mi0yMjguMTJWNDAwaDE0MC4yM3YtODJoLTU1LjkzOFY4Mmg1NC40MTVWMGgtMTU2LjMzbC02NC43MjYgMTgyLjg5TDcxMS44NjYgMHoiLz4KICAgIDxwYXRoIGlkPSJhIiBkPSJNMjIyLjIzIDB2ODJoNTUuOTM3djEzMGgyMTUuMzF2LTI0LjkyOHMxOC4wMTEtMTQuMDQyIDIzLjc1LTI3LjM2N2wxMS41MjMtMjUuODU1czUuMzUyLTE0LjQ3MiA1LjM1Mi0yNy40MDVsLTIuMzA1LTI1Ljg1NXMtMy42MTYtMjEuMDYzLTkuOTIyLTI3LjMyOGwtMjIuMjY2LTI1Ljg5NVM0NzEuMjc2IDAgNDMzLjc1IDB6bTE0MC4yMyA4Mmg4MS45OTJ2NzZIMzYyLjQ2eiIvPgogICAgPHVzZSB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDQwMCkiIHhsaW5rOmhyZWY9IiNhIi8+CiAgPC9jbGlwUGF0aD4KICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNhY2JhZDAiIHN0cm9rZS13aWR0aD0iMjcuMzciIGQ9Ik0wIDEzLjY4M2gxMDMwdjUzLjIzMkgwbTAgNTMuMjMyaDk3NXY1My4yNDJIMHY1My4yMjJoOTc1djUzLjIyMkgwbTAgNTMuMjQyaDEwMzB2NTMuMjQySDAiIGNsaXAtcGF0aD0idXJsKCNiKSIvPgo8L3N2Zz4K" alt=""/>
+
+            </div>
+            <div>
+               <img src=" https://niftypm.com/_nuxt/img/logo-loreal.8cc4fed.svg" alt=""/>
+            </div>
+            <div>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4OC4yIDMwLjEiPgogIDxwYXRoIGZpbGw9IiNhY2JhZDAiIGQ9Ik0zNy45IDYuN2gzLjVsOCAxMC41VjYuN2gzLjd2MTdoLTMuMmwtOC4zLTEwLjh2MTAuOGgtMy43di0xN3pNNjEuNSAxN0w1NC45IDYuN2g0LjRsNC4xIDYuOCA0LjEtNi44aDQuM2wtNi41IDEwLjJ2Ni44aC0zLjdWMTd6bTExLjktLjZWNi43aDMuN3Y5LjZjMCAyLjggMS40IDQuMiAzLjcgNC4yIDIuMyAwIDMuNy0xLjQgMy43LTQuMVY2LjdoMy43djkuNmMwIDUuMi0yLjkgNy43LTcuNSA3LjdzLTcuMy0yLjYtNy4zLTcuNm0tNjAtLjdjLTMuMS0xLjgtMi44LTQuNS0xLjUtNi40di0uMmMtLjEtLjUtLjYtMS42LS44LTEuOS0uMS0uMS0uMS0uMS0uMSAwIDAgLjUtLjYgMS44LTEuNSAzLjMtMSAxLjctMSA1LjIgMy45IDUuMiAwIC4xIDAgMCAwIDBtLjgtLjFjLTEuOC0zLjkgMS44LTYuNSAyLjQtNyAuMS0uMS4xLS4xLjEtLjIgMC0xLjItLjctMy4yLS45LTMuNWgtLjFjLS4zIDEuMi0yIDMtMi4zIDMuNC0yLjkgMy4zLTIuMiA1LjQuOCA3LjMgMCAuMSAwIDAgMCAwbS42LS4yYy45LTQuMiA0LjMtNC4zIDQuNi01LjEuNS0xLjItLjQtMy40LS42LTMuN2gtLjFjLS41IDEtMS4yIDItMS44IDIuNC0uNy43LTMuNyAyLjktMi4xIDYuNC0uMS4xIDAgLjEgMCAwbS42LjRjNS41LjIgNS45LTQuOCA1LjktNi43IDAtLjEtLjEtLjEtLjEgMC0uMi40LS45IDEuOC0yLjkgMi42LTEuNy44LTIuOCAyLjUtMi45IDQuMS0uMSAwIDAgMCAwIDBtMS4yLjZoLTQuM3YxLjNoNC4zdi0xLjN6bS0yLjUgMTAuMmMwIC4yLjUuMy42IDBsMS04LjNoLTIuNWwuOSA4LjN6bTE2IDMuNUguMVYuMWgzMHYzMHoiLz4KPC9zdmc+Cg==" alt=""/>
+
+            </div>
+        </div>
+
+        <p>SAY GOODBYE TO STATUS MEETINGS</p>
+    </div>
+
+    <div id="lower_part">
+        <div>
+            <h3>Roadmaps</h3>
+            <h3>Tasks</h3>
+            <h3>Discussions</h3>
+            <h3>Docs</h3>
+            <h3>Reporting</h3>
+        </div>
+        <h1>Collaborate on Tasks</h1>
+        <p>Flexibly organize, prioritize, and track daily work with a high level of detail using Kanban, List, Timeline, Calendar, and Swimlane views. Learn more> </p>
+        <img src="https://niftypm.com/_nuxt/img/large@1x.dd989ad.webp" alt=""/>
+        
+    </div>
+
+</body>
+</html>
