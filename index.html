@@ -61,6 +61,9 @@
           box-shadow: -1px -1px 10px -2px rgba(0,0,0,0.5);
           background-color: #F4F6FB;
        }
+       .test{
+        color: #9CDCD8;
+       }
        .dropdown:hover{
         cursor: pointer;
        }
@@ -167,6 +170,7 @@
        #lower_part{
         width:90%;
         height:auto;
+        margin: auto;
         margin-top: 40px;
         background-color: #E7F8FE;
        }
@@ -195,6 +199,192 @@
         margin: 40px 130px;
        
        }
+       h3>img{
+        width:4%;
+       }
+       #lower_part>h3{
+        height: 10px;
+        width:30%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
+       }
+       #lower_part>h3:hover{
+        color:  #00d9ff;
+        cursor:pointer;
+       }
+       #lower_part>h3>img{
+        padding-right: 7px;
+        margin-top: 10px;
+       }
+       h4{
+        text-align: center;
+        margin: auto;
+        margin-top: 150px;
+       }
+       #down_part>div:nth-child(1){
+        width:100%;
+        height:auto;
+        display:flex;
+        margin-left:70px;
+        padding-top: 40px;
+        gap:60px;
+       }
+       #down_part{
+        width:90%;
+        height:auto;
+        margin: auto;
+        margin-top: 40px;
+        background-color: #FCF8FA;
+       }
+       #down_part>div:nth-child(2){
+        width:90%;
+        text-align: left;
+        display: flex;
+        margin-left: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       #down_part>div:nth-child(2)>div>h1+p{
+        margin-left: 0px;
+        width:100%;
+    
+       }
+       #down_part>div:nth-child(2)>div>img{
+        width:110%;
+        margin-top: 40px;
+        
+       }
+       #down_part>div:nth-child(2)>div:nth-child(1){
+        width:45%;
+        margin-top: 160px;
+       }
+       p>i{
+        width: 7%;
+        color: #15BFB2;
+       }
+       #quotes{
+        width:80%;
+        height:350px;
+        margin:auto;
+        text-align: center;
+        margin-top: 70px;
+        background-color: #FAC2AE;
+        border-radius: 15px;
+       }
+       #quotes>div>i+p{
+        width:60%;
+        font-weight: lighter;
+        font-size: x-large;
+        margin: auto;
+        margin-top: 40px;
+        text-align: center;
+        font-style: italic;
+       }
+       #quotes>div>i{
+        margin-top: 60px;
+       }
+       #quotes>div:nth-child(1)>div{
+        margin-top: 80px;
+        line-height: 10px;
+       }
+       #bottom{
+        border:1px solid #FCF9FA;
+        height:500px;
+        width:100%;
+        margin-top: 80px;
+        background-color: #FCF9FA;
+       }
+       #bottom>p{
+        width:30%;
+        cursor:pointer;
+        color:#0BBDAE;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        margin-top: 60px;
+        text-align: center;
+       }
+
+       #container{
+     width:50%;
+     height:450px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     margin: auto;
+     margin-top: 100px;
+     border:1px solid #00BAAB;
+     border-radius: 10px;
+   }
+   #container>div:nth-child(2){
+    width: 90%;
+    height:100px;
+    font-size: medium;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    
+   }
+   #container>div:nth-child(1){
+    width: 90%;
+    height:100px;
+    margin: auto;
+    text-align: center;
+    
+    
+   }
+  
+   #container>div>img{
+    width:10%;
+    height:100px;
+    margin-top: 35px;
+   }
+    #container>div:nth-child(3){
+    width:90%;
+    display:flex;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-between;
+  
+   }
+   div>input{
+    border:1px solid #ECF1F6;
+    background-color: #F1F4F7;
+    width:78%;
+    height:50px;
+    border-radius: 10px;
+   }
+   #container>button{
+    height:40px;
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    color:black;
+   }
+   #container>div>button{
+    width:20%;
+    height:40px;
+    margin-top: 5px;
+    background-color: #00BAAB;
+    border:1px solid #00BAAB;
+    border-radius: 10px;
+    color:white;
+   }
+   #container>p{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+   }
+   #footer_img{
+    width:40%;
+    height:auto;
+    margin: auto;
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    gap:5px;
+   }
+   #footer_img>div>img{
+    width:100%;
+   }
        
  </style>
 </head>
@@ -212,7 +402,7 @@
                        <div class="container">
                           <div>
                           <h3>Discussions</h3>
-                          <h3>Tasks</h3>
+                          <h3><a href="Tasks.html">Tasks</a></h3>
                           <h3>Time Tracing</h3>
                           <h3>Project Home</h3>
                           </div>
@@ -271,7 +461,7 @@
 
               <h3>Got Clients?</h3>
               <h3>Pricing</h3>
-              <h3>Get a Demo</h3>
+              <h3 class="test">Get a Demo</h3>
         </div>
         
         <div id="right">
@@ -347,8 +537,84 @@
         <h1>Collaborate on Tasks</h1>
         <p>Flexibly organize, prioritize, and track daily work with a high level of detail using Kanban, List, Timeline, Calendar, and Swimlane views. Learn more> </p>
         <img src="https://niftypm.com/_nuxt/img/large@1x.dd989ad.webp" alt=""/>
-        
+        <h3><img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt=""/>Try Nifty Now.Thanks us later<i class="fa-solid fa-angle-right"></i></h3>
+    </div>
+     <h4>BUILT FOR EVERY TEAM</h4>
+
+     <div id="down_part">
+        <div>
+            <h3>Engineering</h3>
+            <h3>Sales</h3>
+            <h3>Marketing</h3>
+            <h3>Product</h3>
+            <h3>Client Management</h3>
+            <h3>IT</h3>
+        </div>
+    <div>
+        <div>
+       <h1>Engineering</h1>
+       <p>Let go of fragmented tools. Plan, track, and manage your workflows with award-winning ease — in one collaborative workspace.</p>
+       <p><i class="fa-solid fa-circle-check"></i>Real-time progress reporting with Milestones</p>
+       <p><i class="fa-solid fa-circle-check"></i>Custom development workflows with if/then rules</p>
+       <p><i class="fa-solid fa-circle-check"></i>Manage issues, bugs, and changes directly in one place</p>
+        </div>
+        <div>
+          <img src="https://niftypm.com/_nuxt/img/large@1x.c481d6e.webp" alt=""/>
+        </div>
+    </div>
+ </div>
+
+    <div id="bottom">
+     <div id="quotes">
+        <div>
+        <i class="fa-solid fa-quote-left"></i>
+        <p>Nifty is by far the best productivity tool I've ever used.
+            They have consolidated so many tools down to one for my team, without compromising the experience.</p>
+          <div>
+            <p>RIM N.KAY</p>
+            <P>ENGINEERING LEAD, EMOVIS</P>
+          </div>
+    </div>
+     </div>
+      <p>Read more Nifty reviews on G2<i class="fa-solid fa-angle-right"></i></p>
+     </div>
+
+     <div id="container">
+        <div>
+        <img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt=""/>
+        </div>
+        <div>
+            <h1>Get started Now</h1>
+            <p>It takes less than 2 mins to sign up and create your first project or import your data from anywhere.
+            </p>
+        </div>
+        <div>
+            <input id="email" type="text" placeholder="name@company.com"/>
+            <button>Get Started</button>
+        </div>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6B2ZqYbX5pDaXu6TDwpeGOoxWuVaJwyISvTXnfI1hTQ&s" alt="google_logo"/>Sign Up With Google</button>
+        <p>Free forever. No credit card required</p>
     </div>
 
+    <div id="footer_img">
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2671.abe8328.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2659.521cffc.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2696.defc16a.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2640.333478a.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/users-love-us.a93e7d7.svg" alt=""/>
+        </div>
+    </div>
 </body>
 </html>

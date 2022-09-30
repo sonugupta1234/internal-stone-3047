@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+   ></script>
+    <style>
+        #navbar{
+            width:100%;
+            display:flex;
+            background-color: #FCFDFE;
+            
+        }
+        #navbar>div>img{
+            width: 30%;
+            padding-left: 50px;
+            margin-top: 15px;
+        }
+        h3>i{
+            padding-left: 10px;
+        }
+           #middle{
+            width:70%;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 130px;
+        }
+       
+        #right{
+            width:15%;
+            margin-right: 40px;
+            display: flex;
+        }
+        #right>button{
+            width:40%;
+            height:30px;
+            margin-top: 15px;
+            color:black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        #right>button+button{
+            width:50%;
+            margin-left: 10px;
+            color:white;
+            background-color: #00BAAB;
+        
+        }
+       .dropdown:hover .dropdown-content{
+          width:45%;
+          display: block;
+          cursor: pointer;
+          box-shadow: -1px -1px 10px -2px rgba(0,0,0,0.5);
+          background-color: #F4F6FB;
+       }
+       .test{
+        color: #9CDCD8;
+       }
+       .dropdown:hover{
+        cursor: pointer;
+       }
+       .dropdown-content{
+        display:none;
+        position: absolute;
+
+       
+       }
+
+       .dropdown-content>h3{
+        display: block;
+        margin: auto;
+        padding-left: 55px;
+        color: #FAB668;
+
+       }
+      
+       .container{
+        display:flex;
+        text-align: left;
+        justify-content: space-around;
+       }
+       button>a{
+        cursor: pointer;
+       }
+
+       #top_page{
+        width:100%;
+        border:1px solid #F5F7FB;
+        background-color: #F5F7FB;
+        height:400px;
+       }
+       #top_page>div{
+         width:70%;
+         height:300px;
+         margin: auto;
+         text-align: center;
+         margin-top: 100px;
+         font-family: Arial, Helvetica, sans-serif;
+       }
+       #top_page>div>button{
+        background-color: #FF6A55;
+        border-radius: 15px;
+        color:white;
+        font-weight: bold;
+        border:1px solid #FF6A55;
+       }
+       #top_page>div>div{
+        width:50%;
+        height:auto;
+        display:flex;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+       }
+       #top_page>div>div>button{
+        height:40px;
+    margin-top: 5px;
+    background-color: #00BAAB;
+    border:1px solid #00BAAB;
+    border-radius: 10px;
+    color:white;
+       }
+       #top_page>div>div>input{
+    border:1px solid #ECF1F6;
+    background-color: #F1F4F7;
+    width:78%;
+    height:50px;
+    border-radius: 10px;
+       }
+       #middle_page{
+        width:90%;
+        height:auto;
+        margin:auto;
+        margin-top: 70px;
+        background-color: #FFF8F9 ;
+       }
+       #middle_page>div:nth-child(1){
+        width:70%;
+        height:100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        display:flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+       }
+       #middle_page>div:nth-child(2){
+        width:70%;
+        height:auto;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        text-align: center;
+       }
+       h3>img{
+        width:5%;
+        padding-right: 7px;
+        margin-top: 10px;
+       }
+       #middle_page>h3{
+        width:30%;
+        margin: auto;
+        text-align: center;
+        color:#42CCC1;
+       }
+     
+
+      
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" alt=""/>
+        </div>
+        <div id="middle">
+              
+                <div class="dropdown">
+                  <h3>Features<i class="fa-solid fa-chevron-down"></i></h3>
+                     <div class="dropdown-content">
+                       <h3><i class="fa-solid fa-heart"></i>Learn how Nifty inspires productivity!</h3>
+                       <div class="container">
+                          <div>
+                          <h3>Discussions</h3>
+                          <h3><a href="Tasks.html">Tasks</a></h3>
+                          <h3>Time Tracing</h3>
+                          <h3>Project Home</h3>
+                          </div>
+
+                          <div>
+                            <h3>Milestones(Ghantt Chart)</h3>
+                            <h3>Docs & Files</h3>
+                            <h3>Reporting</h3>
+                            <h3>Project portfolios</h3>
+                          </div>
+                      </div>
+                      </div>
+
+                 </div>
+
+                 <div class="dropdown">
+                    <h3>Use Cases<i class="fa-solid fa-chevron-down"></i></h3>
+                       <div class="dropdown-content">
+                         <h3><i class="fa-solid fa-heart"></i>Nifty is very flexible.Here is a few example how you can Use it</h3>
+                         <div class="container">
+                            <div>
+                            <h3>Agile Development</h3>
+                            <h3>Digital Agencies</h3>
+                            <h3>Marketing Teams</h3>
+                            </div>
+  
+                            <div>
+                              <h3>Client Management</h3>
+                              <h3>Legal Case Management</h3>
+                              <h3>Product Teams</h3>
+                            </div>
+                        </div>
+                        </div>
+  
+                   </div>
+
+                   <div class="dropdown">
+                    <h3>Resources<i class="fa-solid fa-chevron-down"></i></h3>
+                       <div class="dropdown-content">
+                         <div class="container">
+                            <div>
+                            <h3>Apps</h3>
+                            <h3>Integrations</h3>
+                            <h3>Security</h3>
+                            </div>
+  
+                            <div>
+                              <h3>Blog</h3>
+                              <h3>Help Center</h3>
+                              <h3>Get a Demo</h3>
+                            </div>
+                        </div>
+                        </div>
+  
+                   </div>
+
+              <h3>Got Clients?</h3>
+              <h3>Pricing</h3>
+              <h3 class="test">Get a Demo</h3>
+        </div>
+        
+        <div id="right">
+            <button><a href="login.html">Login</a></button>
+            <button><a href="signUp.html">Sign Up</a></button>
+        </div>
+    </div>
+
+    <div id="top_page">
+        <div>
+            <button><i class="fa-solid fa-circle-check"></i>TASK MANAGEMENT</button>
+            <h1>Take meaningful actions</h1>
+            <p>Organize, prioritize, and manage tasks with a high level of detail.
+            </p>
+            <div>
+                <input id="email" type="text" placeholder="name@company.com"/>
+                <button>Get Started</button>
+                <img src="https://api.niftypm.com/auth/google?_ga=2.142480754.1552741598.1664518352-1840611433.1664518352" alt=""/>
+             </div>
+             <p>Free forever. No credit card required.</p>
+        </div>
+    </div>
+
+    <div id="middle_page">
+        <div>
+            <p>Kanban View </p>
+            <p>List View</p>
+            <p>Swimlane View</p>
+            <p>Timeline View</p>
+            <p>Calendar View</p>
+        </div>
+        <div>
+            <h1>Kanban View</h1>
+            <p>Flexibly organize, collaborate, and prioritize work while easily managing feedback and deadlines.</p>
+            <img src="https://niftypm.com/_nuxt/img/large@1x.8caa310.webp" alt=""/>
+            
+        </div>
+        <h3><img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt=""/>Get Started<i class="fa-solid fa-angle-right"></i></h3>
+    </div>
+
+</body>
+</html>
