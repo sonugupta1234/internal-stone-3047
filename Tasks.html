@@ -171,7 +171,128 @@
         text-align: center;
         color:#42CCC1;
        }
-     
+       .part{
+        width:70%;
+        height:auto;
+        margin: auto;
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+       }
+       .part>div>img{
+        width:70%;
+       }
+       #middle_part>p{
+        margin: auto;
+        text-align: center;
+        margin-top: 150px;
+       }
+
+       #down{
+        width:50%;
+        text-align: center;
+        margin: auto;
+        margin-top: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:x-large;
+       }
+      
+      #down>i{
+        width:7%;
+        height:40px;
+        border-radius: 100%;
+        padding-top: 10px;
+        background-color: #FF6651;
+        color: white;
+      }
+       
+      #bottom{
+        width:90%;
+        height:500px;
+        margin: auto;
+        display: flex;
+        margin-top: 40px;
+        
+       }
+       
+        #bottom>div:nth-child(1){
+        width:30%;
+        text-align: left;
+        margin-left: 60px;
+        margin-top: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       #bottom>div:nth-child(1)>p{
+        width:90%;
+        line-height: 25px;
+       }
+       #bottom>div:nth-child(2)>img{
+        margin: 80px 20px;
+        height: 350px;
+        width:100%;
+        
+       }
+
+       #rest{
+        width:90%;
+        height:auto;
+        margin: auto;
+        display: flex;
+        margin-top: 40px;
+       }
+
+       #rest>div:nth-child(2){
+        width:30%;
+        text-align: left;
+        margin-left: 60px;
+        margin-top: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       #rest>div:nth-child(2)>p{
+        width:90%;
+        line-height: 25px;
+       }
+       #rest>div:nth-child(1)>img{
+        margin: 80px 20px;
+        height: 350px;
+        width:93%;
+        
+       }
+      
+       #test{
+        width:90%;
+        height:530px;
+        margin: auto;
+        display: flex;
+        margin-top: 40px;
+        
+       }
+       
+        #test>div:nth-child(1){
+        width:30%;
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       #test>div:nth-child(1)>p{
+        width:90%;
+        line-height: 25px;
+       }
+       #test>div:nth-child(2)>img{
+        margin: 110px 210px;
+        width:40%;
+        
+       }
+       #test>div:nth-child(2){
+        width:70%;
+        background-image: url("https://niftypm.com/_nuxt/img/cloud-decoration.1932f4a.png");
+        background-position: top;
+        background-size: 100% 530px;
+       }
+      
 
       
     </style>
@@ -289,6 +410,70 @@
         </div>
         <h3><img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt=""/>Get Started<i class="fa-solid fa-angle-right"></i></h3>
     </div>
+   
+    <div id="middle_part">
+        <p>JOIN OVER 20,000 HIGHLY PRODUCTIVE TEAMS</p>
+        <div class="part">
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/logo-verizon.b7c8a9c.svg" alt=""/>
+            </div>
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/logo-pd.e35bded.svg" alt=""/>
+            </div>
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/logo-emovis.895c86e.svg" alt=""/>
+            </div>
+            <div>
+                <img src="https://niftypm.com/_nuxt/img/logo-vmware.b3363fd.svg" alt=""/>
+            </div>
+            <div>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI0MDAiPgogIDxjbGlwUGF0aCBpZD0iYiI+CiAgICA8cGF0aCBkPSJNMC0xdjgzaDU1LjkzN3YyMzZIMS41MjN2ODJoMTk0LjY1di04MmgtNTUuOTM4VjgyaDU0LjQxNFYtMXptNTU0LjAyIDF2ODJoNTUuOTM4djIzNmgtNTQuNDE0djgyaDEzOC43MVYxNzEuODRsODIuNjU2IDIyOC4wOCAxLjY4LjA0IDgxLjE3Mi0yMjguMTJWNDAwaDE0MC4yM3YtODJoLTU1LjkzOFY4Mmg1NC40MTVWMGgtMTU2LjMzbC02NC43MjYgMTgyLjg5TDcxMS44NjYgMHoiLz4KICAgIDxwYXRoIGlkPSJhIiBkPSJNMjIyLjIzIDB2ODJoNTUuOTM3djEzMGgyMTUuMzF2LTI0LjkyOHMxOC4wMTEtMTQuMDQyIDIzLjc1LTI3LjM2N2wxMS41MjMtMjUuODU1czUuMzUyLTE0LjQ3MiA1LjM1Mi0yNy40MDVsLTIuMzA1LTI1Ljg1NXMtMy42MTYtMjEuMDYzLTkuOTIyLTI3LjMyOGwtMjIuMjY2LTI1Ljg5NVM0NzEuMjc2IDAgNDMzLjc1IDB6bTE0MC4yMyA4Mmg4MS45OTJ2NzZIMzYyLjQ2eiIvPgogICAgPHVzZSB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDQwMCkiIHhsaW5rOmhyZWY9IiNhIi8+CiAgPC9jbGlwUGF0aD4KICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNhY2JhZDAiIHN0cm9rZS13aWR0aD0iMjcuMzciIGQ9Ik0wIDEzLjY4M2gxMDMwdjUzLjIzMkgwbTAgNTMuMjMyaDk3NXY1My4yNDJIMHY1My4yMjJoOTc1djUzLjIyMkgwbTAgNTMuMjQyaDEwMzB2NTMuMjQySDAiIGNsaXAtcGF0aD0idXJsKCNiKSIvPgo8L3N2Zz4K" alt=""/>
 
+            </div>
+            <div>
+               <img src=" https://niftypm.com/_nuxt/img/logo-loreal.8cc4fed.svg" alt=""/>
+            </div>
+            <div>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4OC4yIDMwLjEiPgogIDxwYXRoIGZpbGw9IiNhY2JhZDAiIGQ9Ik0zNy45IDYuN2gzLjVsOCAxMC41VjYuN2gzLjd2MTdoLTMuMmwtOC4zLTEwLjh2MTAuOGgtMy43di0xN3pNNjEuNSAxN0w1NC45IDYuN2g0LjRsNC4xIDYuOCA0LjEtNi44aDQuM2wtNi41IDEwLjJ2Ni44aC0zLjdWMTd6bTExLjktLjZWNi43aDMuN3Y5LjZjMCAyLjggMS40IDQuMiAzLjcgNC4yIDIuMyAwIDMuNy0xLjQgMy43LTQuMVY2LjdoMy43djkuNmMwIDUuMi0yLjkgNy43LTcuNSA3LjdzLTcuMy0yLjYtNy4zLTcuNm0tNjAtLjdjLTMuMS0xLjgtMi44LTQuNS0xLjUtNi40di0uMmMtLjEtLjUtLjYtMS42LS44LTEuOS0uMS0uMS0uMS0uMS0uMSAwIDAgLjUtLjYgMS44LTEuNSAzLjMtMSAxLjctMSA1LjIgMy45IDUuMiAwIC4xIDAgMCAwIDBtLjgtLjFjLTEuOC0zLjkgMS44LTYuNSAyLjQtNyAuMS0uMS4xLS4xLjEtLjIgMC0xLjItLjctMy4yLS45LTMuNWgtLjFjLS4zIDEuMi0yIDMtMi4zIDMuNC0yLjkgMy4zLTIuMiA1LjQuOCA3LjMgMCAuMSAwIDAgMCAwbS42LS4yYy45LTQuMiA0LjMtNC4zIDQuNi01LjEuNS0xLjItLjQtMy40LS42LTMuN2gtLjFjLS41IDEtMS4yIDItMS44IDIuNC0uNy43LTMuNyAyLjktMi4xIDYuNC0uMS4xIDAgLjEgMCAwbS42LjRjNS41LjIgNS45LTQuOCA1LjktNi43IDAtLjEtLjEtLjEtLjEgMC0uMi40LS45IDEuOC0yLjkgMi42LTEuNy44LTIuOCAyLjUtMi45IDQuMS0uMSAwIDAgMCAwIDBtMS4yLjZoLTQuM3YxLjNoNC4zdi0xLjN6bS0yLjUgMTAuMmMwIC4yLjUuMy42IDBsMS04LjNoLTIuNWwuOSA4LjN6bTE2IDMuNUguMVYuMWgzMHYzMHoiLz4KPC9zdmc+Cg==" alt=""/>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="down">
+        <i class="fa-solid fa-check"></i>
+            <h1>Do more with Tasks</h1>
+            <p>Empower your team by creating order and staying on track.</p>
+    </div>
+
+    <div id="bottom">
+        <div>
+            <h1>Start with clarity</h1>
+            <p>Keep track of all your task assignments, activities, and time logs across projects. Use the 'My Work' section to stay on top of all tasks assigned to you, sorted by deadlines.</p>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/large@1x.6c5e916.webp" alt=""/>
+        </div>
+    </div>
+
+    <div id="rest">
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/large@1x.cf08792.webp" alt=""/>
+        </div>
+        <div>
+            <h1>Never miss a deadline</h1>
+            <p>Filter tasks by due dates, task assignees, and tied Milestones to see exactly where you stand with your project progress.</p>
+        </div>
+    </div>
+
+    <div id="test">
+        <div>
+            <h1>Automate Task Assignments</h1>
+            <p>Automate your workflow by assigning users to entire task lists. When a team member is assigned to a task list, they’re automatically assigned to every task in that list.</p>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/large@1x.65e6a2d.webp" alt=""/>
+        </div>
+    </div>
 </body>
 </html>
