@@ -92,13 +92,43 @@
        }
       
        #video{
-        height: 350px;
+        height: 230px;
         background-image: url("https://niftypm.com/_nuxt/img/large@1x.8a3e5ad.webp");
         width:50%;
         margin: auto;
+        margin-top: 20px;
+        border:1px solid  #F8F8FA;
         background-position: top;
         background-size: cover;
        }
+       #play-button{
+        width:15%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin: auto;
+        margin-top: 80px;
+        justify-content: center;
+        height: 100px;
+        color:#00BAAB;
+        font-size: xx-large;
+        border-radius: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+       }
+      
+
+       #play-button:hover{
+        border:1px solid #00BAAB;
+       }
+      
+      #video>p{
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        color:#00BAAB;
+      }
+      
 
        #body>div:nth-child(2){
         width:60%;
@@ -127,11 +157,11 @@
        }
        #body>div:nth-child(2)>div>button{
        height:40px;
-      margin-top: 5px;
-      background-color: #00BAAB;
-     border:1px solid #00BAAB;
-    border-radius: 10px;
-    color:white;
+       margin-top: 5px;
+       background-color: #00BAAB;
+       border:1px solid #00BAAB;
+       border-radius: 10px;
+       color:white;
        }
        button>img{
         width:10%;
@@ -148,6 +178,7 @@
        #body{
         background-color: #F8F8FA;
         height:auto;
+        border:1px solid  #F8F8FA;
        }
        .part{
         width:70%;
@@ -384,6 +415,10 @@
    }
    #footer_img>div>img{
     width:100%;
+    
+   }
+   #play-button>iframe{
+    position: absolute;
    }
        
  </style>
@@ -473,11 +508,13 @@
     
     <div id="body">
         <div id="video">
-            
-            <div>
-                <div id="play-button"><i class="fa-sharp fa-solid fa-play"></i></div>
-                <p>I N T R O D U C I N G</p>
-            </div>
+           
+           
+                <div id="play-button">
+                   <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
+                   <p>I N T R O D U C I N G</p>
+                
          </div>
         
      <div>
@@ -616,5 +653,7 @@
             <img src="https://niftypm.com/_nuxt/img/users-love-us.a93e7d7.svg" alt=""/>
         </div>
     </div>
+  
 </body>
 </html>
+
