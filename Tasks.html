@@ -16,7 +16,7 @@
             background-color: #FCFDFE;
             
         }
-        #navbar>div>img{
+        #navbar>div>a>img{
             width: 30%;
             padding-left: 50px;
             margin-top: 15px;
@@ -293,14 +293,191 @@
         background-size: 100% 530px;
        }
       
+       #task{
+        width:90%;
+        height:auto;
+        margin: auto;
+        display: flex;
+        margin-top: 40px;
+       }
+
+       #task>div:nth-child(2){
+        width:30%;
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       #task>div:nth-child(2)>p{
+        width:90%;
+        line-height: 25px;
+       }
+       #task>div:nth-child(1){
+        margin: 80px 60px;
+        height: auto;
+        width:auto;
+        
+        
+       }
+
+       #milestone{
+        width:90%;
+        height:530px;
+        margin: auto;
+        display: flex;
+        margin-top: 40px;
+        
+       }
+       
+        #milestone>div:nth-child(1){
+        width:30%;
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       #milestone>div:nth-child(1)>p{
+        width:90%;
+        line-height: 25px;
+       }
+       #milestone>div:nth-child(2)>img{
+        margin: 110px 50px;
+        width:80%;
+        
+       }
+       #milestone>div:nth-child(2){
+        width:70%;
+        background-image: url("https://niftypm.com/_nuxt/img/cloud-decoration.1932f4a.png");
+        background-position: top;
+        margin-left: 50px;
+        background-size: 100% 530px;
+       }
+       #subtask{
+        width:90%;
+        height:530px;
+        margin: auto;
+        display: flex;
+        margin-top: 40px;
+        
+       }
+      
+       #subtask>div:nth-child(1){
+        width:30%;
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       #subtask>div:nth-child(1)>p{
+        width:90%;
+        line-height: 25px;
+       }
+       #subtask>div:nth-child(2)>img{
+        margin: 110px 150px;
+        width:50%;
+        
+       }
+       #subtask>div:nth-child(2){
+        width:70%;
+        background-image: url("https://niftypm.com/_nuxt/img/cloud-decoration.1932f4a.png");
+        background-position: top;
+        margin-left: 50px;
+        background-size: 100% 530px;
+       }
+
+       #container{
+     width:50%;
+     height:450px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     margin: auto;
+     margin-top: 100px;
+     border:1px solid #00BAAB;
+     border-radius: 10px;
+   }
+   #container>div:nth-child(2){
+    width: 90%;
+    height:100px;
+    font-size: medium;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    
+   }
+   #container>div:nth-child(1){
+    width: 90%;
+    height:100px;
+    margin: auto;
+    text-align: center;
+    
+    
+   }
+  
+   #container>div>img{
+    width:10%;
+    height:100px;
+    margin-top: 35px;
+   }
+    #container>div:nth-child(3){
+    width:90%;
+    display:flex;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-between;
+  
+   }
+   #container>button>img{
+    width:5%;
+   }
+   div>input{
+    border:1px solid #ECF1F6;
+    background-color: #F1F4F7;
+    width:78%;
+    height:50px;
+    border-radius: 10px;
+   }
+   #container>button{
+    height:40px;
+    margin: 30px 180px;
+    font-weight: bold;
+    border-radius: 10px;
+    color:black;
+   }
+   #container>div>button{
+    width:20%;
+    height:40px;
+    margin-top: 5px;
+    background-color: #00BAAB;
+    border:1px solid #00BAAB;
+    border-radius: 10px;
+    color:white;
+   }
+   #container>p{
+    text-align: center;
+    margin: auto;
+   }
+   #footer_img{
+    width:40%;
+    height:auto;
+    margin: auto;
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    gap:5px;
+   }
+   #footer_img>div>img{
+    width:100%;
+    
+   }
+      
 
       
     </style>
 </head>
 <body>
     <div id="navbar">
-        <div>
-            <img src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" alt=""/>
+        <div><a href="index.html">
+            <img src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" alt=""/></a>
         </div>
         <div id="middle">
               
@@ -473,6 +650,74 @@
         </div>
         <div>
             <img src="https://niftypm.com/_nuxt/img/large@1x.65e6a2d.webp" alt=""/>
+        </div>
+    </div>
+
+    <div id="task">
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/large@1x.a577736.webp" alt=""/>
+        </div>
+        <div>
+            <h1>Recurring Tasks</h1>
+            <p>Set tasks to recur by date or status to automatically recreate your scheduled tasks based on specific dates or reaching a certain status.</p>
+        </div>
+    </div>
+
+    <div id="milestone">
+        <div>
+            <h1>Convert Tasklists into Milestones</h1>
+            <p>Add due dates to your tasklists and turn them into milestones to automate their progress as tasks are completed.</p>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/large@1x.b9fdb3b.webp" alt=""/>
+        </div>
+    </div>
+
+    <div id="subtask">
+        <div>
+            <h1>Subtasks</h1>
+            <p>Use subtasks as a smaller task objectives and never miss a beat with progress status.</p>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/large@1x.312d8b3.webp" alt=""/>
+        </div>
+    </div>
+
+    <div id="container">
+        <div>
+        <img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt=""/>
+        </div>
+        <div>
+            <h1>Get started Now</h1>
+            <p>It takes less than 2 mins to sign up and create your first project or import your data from anywhere.
+            </p>
+        </div>
+        <div>
+            <input id="email" type="text" placeholder="name@company.com"/>
+            <button>Get Started</button>
+        </div>
+        <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6B2ZqYbX5pDaXu6TDwpeGOoxWuVaJwyISvTXnfI1hTQ&s" alt="google_logo"/>Sign Up With Google</button>
+        <p>Free forever. No credit card required</p>
+    </div>
+
+    <div id="footer_img">
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2671.abe8328.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2659.521cffc.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2696.defc16a.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/medal-2640.333478a.svg" alt=""/>
+        </div>
+        <div>
+            <img src="https://niftypm.com/_nuxt/img/users-love-us.a93e7d7.svg" alt=""/>
         </div>
     </div>
 </body>
